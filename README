@@ -1,0 +1,9 @@
+In this project I re-created the dinosaur game that appears in google chrome when you have no internet connnetion. To lay my game simply click the up-arrow to have the dinosaur jump. The goal is for you to jump over the cacti as they approch. Every so often, the cacti will begin to populate at a higher rate and their velocity will increase so stay ready.
+
+To create the output of this game, I used the SDL library. Then to control the movement of the dino, I used the SDL functions to read keyboard input. 
+
+To create the cyclical nature of this game, I ran a game loop to run as long as your dino did not hit a cactus. I also implemented a linked list that worked within the game loop to manage the cacti appearing on the screen. This linked list functioned as a queue, where at random points in time a dino would be added to the queue, then when its position moved off screen it would be removed.
+
+A function was implemented to check the positions of the dinosaur and relevant cacti so that any time there was a "collision" the game would stop and print your current score. 
+
+I would like to acknowledge that I used images from the web to create the dino and cacti, and that I recieved help from the CSC 161 mentors as well as proffessor Curtsinger. 
